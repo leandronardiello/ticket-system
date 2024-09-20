@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #9d1c3a, #d2683e); /* Cores do logotipo e gradiente */
+    background: linear-gradient(135deg, #2e19eb, #5cf90d); /* Cores do logotipo e gradiente */
     color: white;
   }
   
@@ -74,14 +74,14 @@ body {
   
   input:focus {
     outline: none;
-    border-color: #9d1c3a;
+    border-color: #2e19eb;
     box-shadow: 0 0 5px rgba(157, 28, 58, 0.5);
   }
   
   .login-btn {
     width: 105%;
     padding: 12px;
-    background-color: #9d1c3a; /* Cor personalizada para o botão */
+    background-color: #2e19eb; /* Cor personalizada para o botão */
     color: white;
     border: none;
     border-radius: 5px;
@@ -92,14 +92,14 @@ body {
   }
   
   .login-btn:hover {
-    background-color: #d2683e; /* Cor ao passar o mouse */
+    background-color: #5cf90d; /* Cor ao passar o mouse */
   }
   
   .forgot-password {
     text-align: center;
     margin-top: 15px;
     font-size: 14px;
-    color: #9d1c3a;
+    color: #2e19eb;
     cursor: pointer;
   }
   
