@@ -1,27 +1,17 @@
 import React, { useState } from 'react';
 import './login.css'; // Importando o CSS
+import { useNavigate } from 'react-router-dom'; // Para redirecionar
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate(); // Hook para navegação
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-
-    const res = await fetch('/loginController', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ email, password }),
-    });
-
-    if (res.ok) {
-      alert('Login bem-sucedido');
-      // Redirecionar para o dashboard
-    } else {
-      alert('Usuário ou senha inválidos');
-    }
+    
+    // Redirecionando diretamente para o dashboard
+    navigate('/dashboard');
   };
 
   return (
@@ -31,7 +21,7 @@ const Login = () => {
       </div>
       <div className="login-right">
         <form className="login-form" onSubmit={handleSubmit}>
-          <h2>Login</h2>
+          <h2>Bem Vindo ao SmartFix  </h2>
           <div className="form-group">
             <label htmlFor="email">Email:</label>
             <input
