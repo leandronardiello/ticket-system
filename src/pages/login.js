@@ -21,7 +21,7 @@ const Login = () => {
       </div>
       <div className="login-right">
         <form className="login-form" onSubmit={handleSubmit}>
-          <h2>Bem Vindo ao SmartFix  </h2>
+          <h2>Bem Vindo ao SmartFix</h2>
           <div className="form-group">
             <label htmlFor="email">Email:</label>
             <input
